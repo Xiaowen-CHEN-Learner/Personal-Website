@@ -11,11 +11,13 @@ I use financial analysis, code, and structured research to make investment quest
 | Project | What you will find |
 | --- | --- |
 | [Learn Finance Through Games](https://github.com/Xiaowen-CHEN-Learner/Learn-Finance-Though-Games) | Browser-based finance education using HTML, CSS, JavaScript, and documented historical-data resources. |
-| [Quantamental Investing Research](https://github.com/Xiaowen-CHEN-Learner/Quantitative-investing_Quantamental-approach) | Python notebooks exploring VIX/index strategies and market sentiment. |
+| [Quantamental Investing Research](https://github.com/Xiaowen-CHEN-Learner/Quantitative-investing_Quantamental-approach) | Python notebooks exploring VIX/index strategies and market sentiment, including a documented SPY methodology review. |
 | [Equity Research Portfolio](https://github.com/Xiaowen-CHEN-Learner/Equity-research) | Written investment research, industry notes, and investment frameworks. |
 | [Market Price and Catalyst Visualizations](https://github.com/Xiaowen-CHEN-Learner/AI-Projects---Price-Catalysts) | Notebook experiments connecting price charts with event context. |
 | [AI Research Workflows](https://github.com/Xiaowen-CHEN-Learner/From-prompt-to-AI-system) | Reusable Markdown research instructions and portfolio-review examples. |
 | [Precious-Metals Portfolio Research](https://github.com/Xiaowen-CHEN-Learner/FMR-A---Structuring-a-1-Million-Portfolio-Gold-Silver-and-Gold-Mining-Equities) | Analytical notebooks supporting an academic group portfolio project involving gold, silver, and mining equities. |
+
+**Try a runnable example:** the [Fixed-Income Research Lab](https://github.com/Xiaowen-CHEN-Learner/Headhunt_FixedIncome) now includes an offline Python bond-pricing and yield-sensitivity example, expected CSV output, and 15 locally passing unit tests. The example uses synthetic inputs and was added with AI assistance; its tests do not validate the separate historical-data archive.
 
 ## Experience I bring
 
@@ -33,7 +35,7 @@ At Fordham, my research-assistant work includes reviewing AI and automation-rela
 
 ## Current learning and development
 
-I am developing my work in fixed-income and equity research, portfolio-risk analysis, reproducible Python workflows, and the evaluation of AI-assisted research. My [Fixed-Income Research Lab](https://github.com/Xiaowen-CHEN-Learner/Headhunt_FixedIncome) is an early-stage workspace, not a finished dashboard.
+I am developing my work in fixed-income and equity research, portfolio-risk analysis, reproducible Python workflows, and the evaluation of AI-assisted research. My fixed-income workspace remains an educational project, not a live dashboard.
 
 I aim to distinguish observations from assumptions, document sources and limitations, and make analytical work easier for another person to review.
 
@@ -45,4 +47,4 @@ I welcome conversations about investment research, asset management, finance ana
 
 ---
 
-Projects include educational prototypes and academic research. Historical analyses are not investment advice or independently verified track records. Collaborative work is credited in the relevant project materials.
+Projects include educational prototypes and academic research. Historical analyses are not investment advice or independently verified track records. Collaborative work and AI assistance are credited in the relevant project materials.
