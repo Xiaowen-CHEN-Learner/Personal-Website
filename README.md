@@ -1,28 +1,22 @@
-# Xavier Chen — Personal Portfolio Website
+# Xavier Chen — Finance Research & Analytics
 
-A static personal website supporting my portfolio in finance, investment research, and applied technology.
+A project-focused portfolio connecting my financial-analysis background with research notebooks, working Python examples, and financial-education tools.
 
-**[Published site URL](https://xiaowen-chen-learner.github.io/Personal-Website/)** · **[LinkedIn](https://www.linkedin.com/in/xiaowen-chen/)** · **[GitHub](https://github.com/Xiaowen-CHEN-Learner)**
+[![Portfolio checks](https://github.com/Xiaowen-CHEN-Learner/Personal-Website/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/Xiaowen-CHEN-Learner/Personal-Website/actions/workflows/portfolio-checks.yml)
 
-## Profile and repository setup
+**[Portfolio website](https://xiaowen-chen-learner.github.io/Personal-Website/)** · **[LinkedIn](https://www.linkedin.com/in/xiaowen-chen/)** · **[GitHub](https://github.com/Xiaowen-CHEN-Learner)**
 
-[Professional profile README](docs/PROFILE_README.md) · [Project README template](docs/PROJECT_README_TEMPLATE.md) · [Finish account setup](docs/FINISH_GITHUB_SETUP.md)
+## What is here
 
-The [setup script](tools/finish_github_setup.py) can activate the profile README and apply the prepared bio, descriptions, and topics using your own authenticated GitHub CLI. It defaults to preview-only mode. Eleven local safety tests passed; the authenticated account-update path has not been run in this editing session. Pins and photo remain interface-only steps.
+The homepage introduces my finance and research background and links to six selected projects: equity research, quantamental investing, fixed income, finance games, AI research workflows, and a precious-metals academic portfolio. It distinguishes research, prototypes, and runnable examples.
 
-## Project description
-
-This repository contains my personal website and an earlier HTML iteration. It complements the research notebooks, written analysis, and educational tools available across my GitHub account.
-
-The published URL above is the address recorded in the original README. Deployment availability and browser behaviour should be checked separately; these documentation/tooling updates do not rebuild or retest the website.
+`library.html` preserves the previous research-library homepage byte-for-byte, including its existing article index. Archived statements and figures retain their original dates and were not revalidated in this update. The earlier `Personal website/` version is also retained.
 
 ## Tech stack
 
-Static HTML with inline styling and browser scripting where present. The repository contains no JavaScript package-manager manifest or backend application. The optional profile-setup utility uses Python's standard library and GitHub CLI.
+Semantic HTML and a local CSS file. The new homepage needs no JavaScript, external fonts, analytics, build step, or backend. The legacy writing archive has its original JavaScript and external resources.
 
-## Installation
-
-Clone the repository and serve it locally with Python 3:
+## Installation and usage
 
 ```bash
 git clone https://github.com/Xiaowen-CHEN-Learner/Personal-Website.git
@@ -30,42 +24,43 @@ cd Personal-Website
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open `http://localhost:8000/` in a browser. On Windows, `py -m http.server 8000 --bind 127.0.0.1` can be used when the Python launcher is installed.
+Open `http://localhost:8000/`. Use the selected-work cards to open project repositories, or choose Writing archive for the earlier article index. The GitHub Pages project path and repository name have not changed.
 
-## Usage
-
-The root `index.html` is the website entry point. The `Personal website/` directory retains an earlier HTML version. Review links, factual claims, mobile layout, accessibility, and external resources before publishing changes.
-
-No JavaScript package installation is required for basic static serving. To test the separate setup utility without applying account changes:
+## Tests and visual evidence
 
 ```bash
 python -m unittest discover -s tests -v
-python tools/finish_github_setup.py
+python -m pip install playwright==1.57.0
+python -m playwright install chromium
+python tools/check_browser.py
 ```
 
-## Selected project repositories
+The browser script tests the homepage at 320, 390, 768, and 1440 pixels, checks keyboard navigation and horizontal overflow, and captures full-page screenshots. It also checks that project cards and contact information remain visible without JavaScript.
 
-| Project | Focus |
-| --- | --- |
-| [Learn Finance Through Games](https://github.com/Xiaowen-CHEN-Learner/Learn-Finance-Though-Games) | Interactive finance education using HTML, CSS, JavaScript, and historical-data resources |
-| [Quantamental Investing Research](https://github.com/Xiaowen-CHEN-Learner/Quantitative-investing_Quantamental-approach) | Python notebooks for VIX/index experiments and market-sentiment exploration |
-| [Equity Research Portfolio](https://github.com/Xiaowen-CHEN-Learner/Equity-research) | Written investment research and industry notes |
-| [Market Price and Catalyst Visualizations](https://github.com/Xiaowen-CHEN-Learner/AI-Projects---Price-Catalysts) | Market charts, event annotations, and visualization experiments |
-| [AI Research Workflows](https://github.com/Xiaowen-CHEN-Learner/From-prompt-to-AI-system) | Reusable Markdown instructions and portfolio-review examples |
-| [Fixed-Income Research Lab](https://github.com/Xiaowen-CHEN-Learner/Headhunt_FixedIncome) | Offline bond-pricing example with 15 local unit tests, plus dated research inputs |
+Open **Actions → Portfolio checks → a completed run → portfolio-browser-evidence** for its screenshots and JSON report. Artifacts are retained for 30 days. The badge reflects actual workflow status, not a static claim of success.
 
-## Portfolio maintenance
+[Validation scope and local results](docs/PORTFOLIO_VALIDATION.md). Tests do not establish full accessibility compliance, correctness of investment research, or the availability of external destinations.
 
-Use a consistent professional name, keep project descriptions aligned with actual implementation, and distinguish completed work from roadmaps. Update education and experience dates when they change.
+## Repository structure
 
-Keep private contact details, confidential employer material, restricted datasets, and credentials out of the website. Credit collaborators and AI assistance, and distinguish individual responsibilities.
+```text
+index.html                     Project-focused homepage
+assets/portfolio.css           Responsive styles and print/reduced-motion rules
+library.html                   Preserved earlier writing archive
+Personal website/              Earlier HTML iteration
+tests/test_homepage.py         Homepage structural checks
+tools/check_browser.py         Chromium checks and screenshot generation
+docs/PORTFOLIO_VALIDATION.md    Scope, results, and limitations
+```
 
-## Roadmap
+## Profile setup and reusable documentation
 
-Align the website's visible introduction and project cards with the research portfolio; add representative screenshots or result summaries; verify demos, accessibility, and mobile layouts. Consolidate experimental versions only after preserving unique work. These website changes remain pending; the account setup utility does not perform them.
+[Prepared profile README](docs/PROFILE_README.md) · [Project README template](docs/PROJECT_README_TEMPLATE.md) · [Account setup instructions](docs/FINISH_GITHUB_SETUP.md)
 
-## Contact and license
+The existing `tools/finish_github_setup.py` previews changes by default and requires your own authenticated GitHub CLI for `--apply`. This website update does not apply account settings, create a profile repository, or change pins, photos, topics, repository names, visibility, or licenses.
 
-[Xavier Chen on LinkedIn](https://www.linkedin.com/in/xiaowen-chen/)
+## Contributing and attribution
 
-No project-wide license is included. This README does not grant rights to third-party assets or linked research materials.
+Open an issue with the affected page, browser, viewport, and reproduction steps. Do not upload credentials, confidential information, or restricted datasets. Code and documentation include AI-assisted work; personal background is supplied by Xavier Chen, and research credit belongs with each linked project.
+
+No project-wide license has been added. Third-party content retains its own rights and restrictions. Educational research only, not investment advice.
