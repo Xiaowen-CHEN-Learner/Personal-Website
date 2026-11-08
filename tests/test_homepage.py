@@ -70,8 +70,19 @@ class HomepageTests(unittest.TestCase):
         self.assertTrue(any(a.get('href') == 'library.html' for a in self.page.select('a')))
     def test_no_email_or_telephone_publication(self):
         self.assertFalse(any(a.get('href', '').startswith(('mailto:', 'tel:')) for a in self.page.select('a')))
+    def test_research_project_section(self):
+        ids = {a['id'] for _, a in self.page.elements if 'id' in a}
+        self.assertIn('research', ids)
+        repo = 'https://github.com/Xiaowen-CHEN-Learner/Fordham-research-project-2026-2027'
+        reports = [a['href'] for a in self.page.select('a') if a.get('href', '').startswith(repo + '/blob/main/')]
+        self.assertEqual(len(set(reports)), 17)
+        self.assertTrue(all(h.endswith('.pdf') for h in reports))
+        self.assertTrue(all(' ' not in h for h in reports))
+        rows = [a for a in self.page.select('li') if a.get('class') == 'report']
+        self.assertEqual(len(rows), 17)
+        self.assertTrue(any(a.get('href') == repo for a in self.page.select('a')))
     def test_truthful_project_statuses(self):
-        for phrase in ('synthetic inputs', 'not a deployed AI service', 'hypothetical $1 million', 'Expected December 2027'):
+        for phrase in ('synthetic inputs', 'not a deployed AI service', 'hypothetical $1 million', 'Expected December 2027', 'not investment advice'):
             self.assertIn(phrase, self.text)
 
 if __name__ == '__main__':

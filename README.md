@@ -1,6 +1,6 @@
 # Xavier Chen — Finance Research & Analytics
 
-A project-focused portfolio connecting my financial-analysis background with research notebooks, working Python examples, and financial-education tools.
+A research-focused portfolio built around the [Fordham research project 2026–2027](https://github.com/Xiaowen-CHEN-Learner/Fordham-research-project-2026-2027): 17 weekly reports across two tracks (Financial Markets and Investment with AI), plus the repositories, notebooks, and tools behind them.
 
 [![Portfolio checks](https://github.com/Xiaowen-CHEN-Learner/Personal-Website/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/Xiaowen-CHEN-Learner/Personal-Website/actions/workflows/portfolio-checks.yml)
 
@@ -8,7 +8,7 @@ A project-focused portfolio connecting my financial-analysis background with res
 
 ## What is here
 
-The homepage introduces my finance and research background and links to six selected projects: equity research, quantamental investing, fixed income, finance games, AI research workflows, and a precious-metals academic portfolio. It distinguishes research, prototypes, and runnable examples.
+The homepage leads with the research project: three featured reports (the 2-year Treasury fixed-income final project, the NEWSROOM.md Desk Brief iteration, and the uranium and nuclear energy thesis), followed by the complete list of 17 reports organized by track, each linking to its dated PDF on GitHub. Below that, six selected repositories (precious-metals portfolio, AI research workflows, finance games, fixed income, equity research, quantamental investing) are tied back to the reports they support. Research, prototypes, and runnable examples are labeled as such.
 
 `library.html` preserves the previous research-library homepage byte-for-byte, including its existing article index. Archived statements and figures retain their original dates and were not revalidated in this update. The earlier `Personal website/` version is also retained.
 
@@ -35,7 +35,7 @@ python -m playwright install chromium
 python tools/check_browser.py
 ```
 
-The browser script tests the homepage at 320, 390, 768, and 1440 pixels, checks keyboard navigation and horizontal overflow, and captures full-page screenshots. It also checks that project cards and contact information remain visible without JavaScript.
+The structural tests also verify that the research section lists exactly 17 report links, each a space-free URL to a PDF in the research repository. The browser script tests the homepage at 320, 390, 768, and 1440 pixels, checks keyboard navigation and horizontal overflow, and captures full-page screenshots. It also checks that project cards and contact information remain visible without JavaScript.
 
 Open **Actions → Portfolio checks → a completed run → portfolio-browser-evidence** for its screenshots and JSON report. Artifacts are retained for 30 days. The badge reflects actual workflow status, not a static claim of success.
 
@@ -44,7 +44,7 @@ Open **Actions → Portfolio checks → a completed run → portfolio-browser-ev
 ## Repository structure
 
 ```text
-index.html                     Project-focused homepage
+index.html                     Research-focused homepage (17 report links + 6 repositories)
 assets/portfolio.css           Responsive styles and print/reduced-motion rules
 library.html                   Preserved earlier writing archive
 Personal website/              Earlier HTML iteration
