@@ -8,7 +8,7 @@ A research-focused portfolio built around the [Fordham research project 2026–2
 
 ## What is here
 
-The homepage opens with a dark, futuristic hero on turning AI into working investment research, a six-step "AI implementation & transformation" grid (prompt engineering, building AI tools, Claude-assisted theses, shipping AI-built products, research pipelines, human judgment) with each step linked to its report, then three featured reports (the NEWSROOM.md Desk Brief pipeline, the Claude-assisted uranium and nuclear energy thesis, and the 2-year Treasury fixed-income final project), followed by the complete list of 17 reports organized by track, each linking to its dated PDF on GitHub. Below that, six selected repositories (precious-metals portfolio, AI research workflows, finance games, fixed income, equity research, quantamental investing) are tied back to the reports they support. Research, prototypes, and runnable examples are labeled as such.
+The homepage opens with a short hero, a scrolling topic ticker, and three featured reports (NEWSROOM.md pipeline, Claude-assisted uranium thesis, 2-year Treasury final project). A six-step "Prompt → System → Decision" grid links each AI capability to the report where it was built. All 17 reports appear as compact tiles by track; hovering or focusing a tile reveals a one-line brief. Six repositories follow, with prototypes labeled as such.
 
 `library.html` preserves the previous research-library homepage byte-for-byte, including its existing article index. Archived statements and figures retain their original dates and were not revalidated in this update. The earlier `Personal website/` version is also retained.
 
