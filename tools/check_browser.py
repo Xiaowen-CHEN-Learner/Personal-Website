@@ -64,7 +64,7 @@ def run(executable: str | None, output: Path, in_memory: bool = False) -> dict:
                     assert page.url.endswith('#about'), 'About navigation failed'
                     page.get_by_role('link', name='Contact', exact=True).click()
                     assert page.url.endswith('#contact'), 'Contact navigation failed'
-                    assert page.locator('h1').evaluate('(e) => getComputedStyle(e).fontFamily').startswith('Georgia'), 'Stylesheet not applied'
+                    assert page.evaluate("getComputedStyle(document.body).backgroundColor") == 'rgb(7, 11, 18)', 'Stylesheet not applied'
                     assert not errors, errors
                     assert not external, f'Unexpected remote resource requests: {external}'
                     page.evaluate('document.activeElement.blur(); window.scrollTo(0, 0)')

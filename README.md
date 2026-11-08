@@ -1,4 +1,4 @@
-# Xavier Chen — Finance Research & Analytics
+# Xavier Chen — AI-Driven Investment Research
 
 A research-focused portfolio built around the [Fordham research project 2026–2027](https://github.com/Xiaowen-CHEN-Learner/Fordham-research-project-2026-2027): 17 weekly reports across two tracks (Financial Markets and Investment with AI), plus the repositories, notebooks, and tools behind them.
 
@@ -8,13 +8,13 @@ A research-focused portfolio built around the [Fordham research project 2026–2
 
 ## What is here
 
-The homepage leads with the research project: three featured reports (the 2-year Treasury fixed-income final project, the NEWSROOM.md Desk Brief iteration, and the uranium and nuclear energy thesis), followed by the complete list of 17 reports organized by track, each linking to its dated PDF on GitHub. Below that, six selected repositories (precious-metals portfolio, AI research workflows, finance games, fixed income, equity research, quantamental investing) are tied back to the reports they support. Research, prototypes, and runnable examples are labeled as such.
+The homepage opens with a dark, futuristic hero on turning AI into working investment research, a six-step "AI implementation & transformation" grid (prompt engineering, building AI tools, Claude-assisted theses, shipping AI-built products, research pipelines, human judgment) with each step linked to its report, then three featured reports (the NEWSROOM.md Desk Brief pipeline, the Claude-assisted uranium and nuclear energy thesis, and the 2-year Treasury fixed-income final project), followed by the complete list of 17 reports organized by track, each linking to its dated PDF on GitHub. Below that, six selected repositories (precious-metals portfolio, AI research workflows, finance games, fixed income, equity research, quantamental investing) are tied back to the reports they support. Research, prototypes, and runnable examples are labeled as such.
 
 `library.html` preserves the previous research-library homepage byte-for-byte, including its existing article index. Archived statements and figures retain their original dates and were not revalidated in this update. The earlier `Personal website/` version is also retained.
 
 ## Tech stack
 
-Semantic HTML and a local CSS file. The new homepage needs no JavaScript, external fonts, analytics, build step, or backend. The legacy writing archive has its original JavaScript and external resources.
+Semantic HTML and a local CSS file. The dark theme uses CSS gradients, system fonts, and one reduced-motion-aware keyframe animation; the homepage needs no JavaScript, external fonts, analytics, build step, or backend. The legacy writing archive has its original JavaScript and external resources.
 
 ## Installation and usage
 
